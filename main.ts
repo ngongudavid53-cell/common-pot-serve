@@ -1,11 +1,11 @@
-import { Hono } from "hono";
-import type { Context } from "hono";
-import { serveStatic } from "hono/deno";
-import { cors } from "hono/cors";
-import { streamSSE } from "hono/streaming";
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import braintree from "braintree";
-import Stripe from "stripe";
+import { Hono } from "npm:hono@^4.10.7";
+import type { Context } from "npm:hono@^4.10.7";
+import { serveStatic } from "npm:hono@^4.10.7/deno";
+import { cors } from "npm:hono@^4.10.7/cors";
+import { streamSSE } from "npm:hono@^4.10.7/streaming";
+import { GoogleGenerativeAI } from "npm:@google/generative-ai@^0.24.1";
+import braintree from "npm:braintree@^3.38.0";
+import Stripe from "npm:stripe@^17.12.0";
 
 const app = new Hono();
 
